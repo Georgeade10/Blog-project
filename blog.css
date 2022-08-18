@@ -1,0 +1,32 @@
+.container {
+
+    display: grid;
+    width: 90%;
+    margin: auto;
+    margin-top: 60px;
+    padding: 60px;
+    grid-template-rows: 0.5fr 1fr 2fr 0.5fr;
+    grid-template-areas:
+        "hd"
+        "main"
+        "sd"
+        "ft";
+    background-color: beige;
+    height: 100vh
+}
+
+.blog-header {
+    grid-area: hd;
+}
+
+.footer {
+    grid-area: ft;
+}
+
+.blog-sidebar {
+    grid-area: sd;
+}
+
+.content-box {
+    grid-area: main;
+}
