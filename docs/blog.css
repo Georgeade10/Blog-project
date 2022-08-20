@@ -1,6 +1,5 @@
 .container {
-
-    display: grid;
+    /* display: grid;
     width: 90%;
     margin: auto;
     margin-top: 60px;
@@ -8,15 +7,38 @@
     grid-template-rows: 0.5fr 1fr 2fr 0.5fr;
     grid-template-areas:
         "hd"
-        "main"
         "sd"
+        "main"
         "ft";
     background-color: beige;
-    height: 100vh
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;*/
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: flex;
 }
+
+.avatar {
+    vertical-align: middle;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.info {
+    font-size: 20px;
+    color: black;
+    text-align: left;
+}
+
 
 .blog-header {
     grid-area: hd;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
 }
 
 .footer {
@@ -25,8 +47,40 @@
 
 .blog-sidebar {
     grid-area: sd;
+    text-align: left;
 }
 
 .content-box {
     grid-area: main;
+}
+
+p.a {
+    font-style: normal;
+    color: blue text-size;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+
+}
+
+p.b {
+    font-style: italic;
+    color: red;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+p.c {
+    text-decoration: underline;
+    color: green;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
 }

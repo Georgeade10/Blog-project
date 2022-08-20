@@ -1,3 +1,7 @@
+@import "mobilestyle.css";
+@import "blog.css";
+@import "signup.css"
+
 * {
     box-sizing: border-box;
 }
@@ -12,7 +16,11 @@
         "sidebar main main main"
         "sidebar content1 content2 content3"
         "footer footer footer footer";
-    grid-gap: 1rem;
+    grid-gap: 0.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    width: 90%;
+    margin: auto;
 }
 
 nav {
@@ -22,6 +30,24 @@ nav {
     justify-content: center;
     background-color: #630045;
     color: white;
+    width: auto;
+}
+
+.menu {
+    display: flex;
+    justify-content: left;
+    font-family: 'Poppins';
+    padding-left: 2px;
+    gap: 50%;
+    font-weight: bold;
+    font-size: 22px;
+    color: white;
+}
+
+.logo {
+    font-size: 22px;
+    color: #f3f3f3;
+    font-weight: bolder;
 }
 
 .sidebar {
@@ -59,38 +85,12 @@ main {
 footer {
     grid-area: footer;
     background-color: #630045;
+    height: 100px;
+    width: auto;
 }
 
-@media only screen and (max-width: 550px) {
-    .container {
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
-        grid-template-areas:
-            "nav"
-            "sidebar"
-            "main"
-            "content1"
-            "content2"
-            "content3"
-            "footer";
-    }
-
-    .Subscribe-newsletter {
-        width: 400px;
-    }
-
-
-}
-
-.menu {
-    display: flex;
-    justify-content: left;
-    font-family: 'Poppins';
-    padding-left: 20px;
-    gap: 50%;
-    font-weight: bold;
-    font-size: 22px;
-    color: white;
+.Subscribe-newsletter {
+    width: 400px;
 }
 
 img {
@@ -124,12 +124,6 @@ img {
     margin: 5em;
 }
 
-.logo {
-    font-size: 22px;
-    color: #f3f3f3;
-    font-weight: bolder;
-}
-
 .content-table caption {
     background-color: #630045;
     height: 50px;
@@ -159,14 +153,32 @@ h2 {
     font-weight: bolder;
 }
 
-.Signup-botton {
-    font-size: 18px;
-    /* padding: 5px; */
-    margin: 5px;
-    justify-self: center;
-    background-color: red;
-    color: #f3f3f3;
-    /*align-content: center;*/
-    width: 100%;
-    flex-grow: 1;
-}
+.read-more {
+    @include transition(.3s);
+    display: inline-block;
+    width: auto;
+    text-align: center;
+    text-transform: uppercase;
+    background: #CB6074;
+    color: #fff;
+    padding: 15px;
+    margin-bottom: 30px;
+    font-family: 'Oswald', sans-serif;
+
+    hover {
+        background: darken(#CB6074, 20%);
+    }
+
+    @media only screen and (max-width: 470px) {
+        .container {
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 0.4fr;
+            grid-template-areas:
+                "nav"
+                "sidebar"
+                "main"
+                "content1"
+                "content2"
+                "content3"
+                "footer";
+        }
