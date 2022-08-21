@@ -1,0 +1,56 @@
+/* css for sidebar */
+.sidebar {
+  grid-area: sidebar;
+  margin-top: 50px;
+  min-height: 300px;
+  min-width: 300px;
+}
+
+.Subscribe-newsletter {
+  width: 300px;
+  height: 1fr;
+  border: 5px solid #630045;
+  margin: 5em;
+  padding: 0.5cm;
+  font-size: 0.9em;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content-table {
+  border-collapse: collapse;
+  font-size: 0.9em;
+  width: 300px;
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  margin: 5em;
+}
+
+.content-table caption {
+  background-color: #630045;
+  height: 50px;
+  font-size: 25px;
+  color: aliceblue;
+  font-weight: bold;
+  text-align: left;
+  padding: 0.2cm;
+}
+
+.content-table tbody tr {
+  border-bottom: 1px solid grey;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+  border-bottom: 4px solid #630045;
+}
+/* css for section */

@@ -1,0 +1,23 @@
+/* css for ipad and mobile */
+
+@media only screen and (max-width: 1118px) {
+  .content {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    grid-template-columns: 1fr;
+    grid-template-areas: "content  content";
+    gap: 5px;
+
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 912px) {
+  .content {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    grid-template-columns: 1fr;
+    grid-template-areas: "content";
+    gap: 5px;
+    flex-wrap: wrap;
+  }
+}
